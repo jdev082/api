@@ -28,5 +28,6 @@ app.listen(3000, () => {
 
 app.get('*', function(req, res){
   res.setHeader('Content-Type', 'text/plain');
-  res.status(404).send('404');
+  console.log("404, requested content not found.")
+  res.status(404).send('404, requested content not found.');
 });
