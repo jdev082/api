@@ -25,3 +25,8 @@ app.get('/tldr', (req, res) => {
 app.listen(3000, () => {
   console.log('server started');
 });
+
+app.get('*', function(req, res){
+  res.setHeader('Content-Type', 'text/plain');
+  res.status(404).send('404');
+});
