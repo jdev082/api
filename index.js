@@ -5,16 +5,33 @@ const facts = require('./data/facts.js')
 const cors = require('cors');
 app.use(cors());
 
+function selHourlyFact() {
+  itemHourly = facts[Math.floor(Math.random()*facts.length)];
+  cleanHourlyItem = `{"fact":"` + itemHourly + `"}`
+}
+
+selHourlyFact();
+setInterval(selHourlyFact, 1000 * 60 * 60);
+
 app.get('/', (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   res.send(require("./json/dat.json"))
 });
 
+function selFact() {
+  item = facts[Math.floor(Math.random()*facts.length)];
+  cleanItem = `{"fact":"` + item + `"}`
+}
+
 app.get('/fact', (req, res) => {
-  var item = facts[Math.floor(Math.random()*facts.length)];
-  var cleanItem = `{"fact":"` + item + `"}`
+  selFact()
   res.setHeader('Content-Type', 'text/plain');
   res.send(cleanItem)
+});
+
+app.get('/fact/hourly', (req,res) => {
+  res.setHeader('Content-Type', 'text/plain');
+  res.send(cleanHourlyItem)
 });
 
 app.get('/tldr', (req, res) => {
