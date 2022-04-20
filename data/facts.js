@@ -1,6 +1,6 @@
 let facts = [
   // add facts here, this is the data, this is the database. Remember, each fact is to be put in quotation marks ("quote") and have a comma (,) at the end
- "JavaScript took just 10 days to develop.",
+ "JavaScript took only 10 days to develop.",
  // "JavaScript was probably named after Java.", <-- removed, it wasn't
  "According to Github, javaScript is the most used language in the world.",
  "There are around 700 separate programming languages",
