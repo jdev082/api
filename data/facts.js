@@ -9,7 +9,7 @@ let facts = [
  "The smell New Car Smell is the scent of dozens of chemicals",
  "Avocados are a fruit, not a vegetable",
  "Australia is wider than the moon",
- "It's illegal to own just one guinea pig in Switzerland",
+ "In Switzerland, it's illegal to only own one guinea pig",
  "Tomatoes are actually fruit, not vegetables",
  "Bats are the only mammal that can actually fly",
  "Octopuses have 3 hearts",
