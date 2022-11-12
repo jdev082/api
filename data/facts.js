@@ -2,7 +2,7 @@ let facts = [
   // add facts here, this is the data, this is the database. Remember, each fact is to be put in quotation marks ("quote") and have a comma (,) at the end
  "JavaScript only took 10 days to develop",
  "A banana is a berry, but a strawberry isn't",
- "According to Github, javaScript is the most used language in the world",
+ "According to Github, JavaScript is the most used language in the world",
  "There are around 700 separate programming languages",
  "The first computer virus was created in 1986",
  "A narwhal's tusk reveals its past living conditions",
