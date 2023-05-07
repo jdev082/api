@@ -1,4 +1,46 @@
-<h1>JaydenDev's API</h1>
-<hr>
-<p>Features:</p>
-<a href="/fact">Fun Facts</a>
+<html>
+<head>
+  <style>
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Endpoints</h1>
+  <h2>/</h2>
+  <p>Displays this documentation.</p>
+  <h2>/fact/specify/:number</h2>
+  <p>Returns a fact specified by the `number` parameter. The `number` parameter is the index of the fact in the `facts` array.</p>
+  <h2>/fact/specify/count/:number</h2>
+  <p>Returns the first `number` number of facts from the `facts` array in a JSON array.</p>
+  <h2>/fact/specify/count/random/:number</h2>
+  <p>Returns `number` number of randomly selected facts from the `facts` array in a JSON array.</p>
+  <h2>/fact/reqs</h2>
+  <p>Returns the number of requests made to the `/fact` endpoint.</p>
+  <h2>/fact</h2>
+  <p>Returns a randomly selected fact from the `facts` array.</p>
+  <h2>/fact/app</h2>
+  <p>Returns a randomly selected fact from the `facts` array specifically for use in applications. Also logs the current time to the console.</p>
+  <h2>/fact/hourly</h2>
+  <p>Returns a fact that is changed every hour.</p>
+  <h2>/fact/hourly/app</h2>
+  <p>Returns a fact that is changed every hour specifically for use in applications. Also logs the current time to the console.</p>
+</body>
+</html>
