@@ -91,7 +91,7 @@ function getCurrentTime() {
 }
 
 app.get('/fact/app', (req, res) => {
-  res.setHeader('Content-Type', 'text/plain');
+  res.setHeader('Content-Type', 'application/json');
   res.send(selFactNJSON());
   console.log('A user has viewed a fact in the app at ' + getCurrentTime());
 });
